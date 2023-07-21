@@ -39,7 +39,21 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
     scope:'/',
     start_url:'/',
     orientation: 'portrait'
-  }
+  },
+  workbox: {
+    runtimeCaching: [{
+      urlPattern:({url}) => {
+        return url.pathname.startsWith('/properties');
+      },
+      handler:'CacheFirst' as const,
+      options: {
+        cacheName:'api-cache',
+        cacheableResponse: {
+          statuses: [0, 200]
+        }
+      }
+    }]
+ },
 }
 
 // https://vitejs.dev/config/

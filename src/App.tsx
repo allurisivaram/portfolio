@@ -1,9 +1,9 @@
 import {Suspense} from 'react'
 import './App.css'
-import useFetchData from './hooks/useFetchData';
+import useCard from './hooks/useCard';
 
 function App() {
-const URL = 'https://jsonplaceholder.typicode.com/users';
+// const URL = 'https://jsonplaceholder.typicode.com/users';
 // const Options = {
 // 	method: 'GET',
 // 	headers: {
@@ -11,20 +11,13 @@ const URL = 'https://jsonplaceholder.typicode.com/users';
 // 		'X-RapidAPI-Host': 'realty-in-ca1.p.rapidapi.com'
 // 	}
 // };
-
-  const { data } = useFetchData(URL, {});
-  console.log(data);
-  const propertyDetails = data && data.map((e:any, i:number) => {
-    return (
-        <h1 key={i}>{e.name}</h1>
-    )
-  })
+  const ProductCard = useCard('https://i.pinimg.com/originals/6b/35/4d/6b354dd8f8dc2de31dd5fdf1b4ee027d.png', '');
 
   return (
     <Suspense>
         <h1>Welcome to Niva</h1>
         <p> The smart way to share home</p>
-        {propertyDetails}
+        {ProductCard}
     </Suspense>
   )
 }

@@ -1,7 +1,6 @@
 import {Suspense} from 'react'
 import './App.css'
 import useFetchData from './hooks/useFetchData';
-import {IResults} from './model/propertyModel';
 
 function App() {
 const URL = 'https://jsonplaceholder.typicode.com/users';

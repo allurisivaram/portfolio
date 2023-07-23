@@ -1,5 +1,4 @@
 import { useState, useEffect} from "react";
-import {IResults} from '../model/propertyModel';
 
 
 // Define the type of the data returned by the API

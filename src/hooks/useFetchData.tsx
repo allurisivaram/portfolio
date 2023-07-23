@@ -20,7 +20,7 @@ type UseFetch = {
 // Define the custom hook
 const useFetchData = (url: string, options: Object): UseFetch => {
   // Initialize the state variables
-  const [data, setData] = useState<IResults | null>();
+  const [data, setData] = useState<any | null>();
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
 
@@ -42,7 +42,7 @@ const useFetchData = (url: string, options: Object): UseFetch => {
       console.log(data);
       
       // Update the state variables
-      setData(data.Results);
+      setData(data);
       setLoading(false);
       setError(null);
     } catch (error) {

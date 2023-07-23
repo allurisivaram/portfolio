@@ -61,7 +61,7 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
   workbox: {
     runtimeCaching: [{
       urlPattern:({url}) => {
-        return url.pathname.startsWith('https://realty-in-ca1.p.rapidapi.com')
+        return url.pathname.startsWith('/users')
       },
       handler:'CacheFirst' as const,
       options: {

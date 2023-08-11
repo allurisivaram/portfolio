@@ -21,7 +21,14 @@ const CommunitySection = (props: Props) => {
             <WrapItem>
                 <Center w='100%'>
                     <Box>
-                        <Text fontSize='64px' textAlign='center'>
+                        <Text   
+                            bgGradient='linear(to-l, #eb9c64,#bc427f, #894c91, #02aebe)'
+                            bgClip='text'
+                            fontSize='64'
+                            fontWeight='bold'
+                            textAlign='center'
+                            textShadow='lg'
+                            >
                             “Community living<br></br>
                             for a better tomorrow”
                         </Text>

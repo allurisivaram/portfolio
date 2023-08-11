@@ -17,7 +17,7 @@ const ProvinceSection = (props: Props) => {
             </Heading>
         </Flex>
         <Flex flexDirection='row' justifyContent='space-around' alignItems='center' mb='100px'>
-            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#02aebe'>
+            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#02aebe' cursor='pointer'>
                 <Image
                     rounded='xl' 
                     src='https://nivaappstorage.blob.core.windows.net/images/mississauga-ontario.png' 
@@ -27,7 +27,7 @@ const ProvinceSection = (props: Props) => {
                 <Text fontSize='lg' as='b' color='whiteAlpha.900'>Mississauga</Text>
                 </Box>
             </Box>
-            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#4665b2'>
+            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#4665b2' cursor='pointer'>
                 <Image
                     rounded='xl' 
                     src='https://nivaappstorage.blob.core.windows.net/images/oakville-ontario.png' 
@@ -37,7 +37,7 @@ const ProvinceSection = (props: Props) => {
                 <Text fontSize='lg' as='b' color='whiteAlpha.900'>Oakville</Text>
                 </Box>
             </Box>
-            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#894c91'>
+            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#894c91' cursor='pointer'>
                 <Image 
                     rounded='xl'
                     src='https://nivaappstorage.blob.core.windows.net/images/scarbrough-ontario.png' 
@@ -47,7 +47,7 @@ const ProvinceSection = (props: Props) => {
                 <Text fontSize='lg' as='b' color='whiteAlpha.900'>Scarbrough</Text>
                 </Box>
             </Box>
-            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#bc427f'>
+            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#bc427f' cursor='pointer'>
                 <Image 
                     rounded='xl'
                     src='https://nivaappstorage.blob.core.windows.net/images/toronto-ontario.png' 
@@ -57,7 +57,7 @@ const ProvinceSection = (props: Props) => {
                 <Text fontSize='lg' as='b' color='whiteAlpha.900'>Toronto</Text>
                 </Box>
             </Box>
-            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#02aebe'>
+            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#02aebe' cursor='pointer'>
                 <Image 
                     rounded='xl'
                     src='https://nivaappstorage.blob.core.windows.net/images/hamilton-ontario.png' 
@@ -67,7 +67,7 @@ const ProvinceSection = (props: Props) => {
                 <Text fontSize='lg' as='b' color='whiteAlpha.900'>Hamilton</Text>
                 </Box>
             </Box>
-            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#eb9c64'>
+            <Box boxShadow='lg' rounded='xl' bg='white' w='180px' h='250px' backgroundColor='#eb9c64' cursor='pointer'>
                 <Image 
                     rounded='xl'
                     src='https://nivaappstorage.blob.core.windows.net/images/ajax-ontario.png' 

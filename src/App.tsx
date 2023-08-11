@@ -7,6 +7,9 @@ import HeroBanner from './components/HeroBanner';
 import BenefitsSection from './components/BenefitsSection';
 import ProvinceSection from './components/ProvinceSection';
 import CommunitySection from './components/CommunitySection';
+import Footer from './components/Footer';
+import CommunityBanner from './components/CommunityBanner';
+import ConnectingFormSection from './components/ConnectingFormSection';
 
 function App() {
 // const URL = 'https://jsonplaceholder.typicode.com/users';
@@ -17,7 +20,7 @@ function App() {
 // 		'X-RapidAPI-Host': 'realty-in-ca1.p.rapidapi.com'
 // 	}
 // };
-  const ProductCard = useCard('https://i.pinimg.com/originals/6b/35/4d/6b354dd8f8dc2de31dd5fdf1b4ee027d.png', '');
+  // const ProductCard = useCard('https://i.pinimg.com/originals/6b/35/4d/6b354dd8f8dc2de31dd5fdf1b4ee027d.png', '');
 
   return (
     <>
@@ -30,7 +33,10 @@ function App() {
           <ProvinceSection/>
           <BenefitsSection/>
           <CommunitySection/>
+          {/* <ConnectingFormSection/> */}
+          <CommunityBanner/>
         </Container>
+        <Footer/>
     </>
   )
 }
